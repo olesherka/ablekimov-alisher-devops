@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    image: ablekimov-alisher-devops
+    container_name: ablekimov-alisher-compose
+    ports:
+      - "5000:8080"
+    environment:
+      STUDENT_NAME: Alisher
+      STUDENT_SURNAME: Ablekimov
+      STUDENT_GROUP: IT2-2312
+      STUDENT_ID: "37637"
+    restart: unless-stopped
