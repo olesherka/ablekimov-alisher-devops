@@ -20,3 +20,9 @@ Dockerfile           how the Docker image is built
 docker-compose.yml   starts the application with Docker Compose
 Jenkinsfile          Jenkins pipeline: Checkout, Build, Test, Docker Build, Docker Run
 ```
+
+## How to run
+
+docker build -t ablekimov-alisher-devops .
+docker run --name ablekimov-alisher-container ablekimov-alisher-devops
+docker compose up -d
